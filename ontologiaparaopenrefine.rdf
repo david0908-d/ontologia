@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal/"
+     xml:base="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:holaquetal="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#kjbkjhkjh -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#kjbkjhkjh"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#tieneCancion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#tieneCancion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Artista"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Cancion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#tieneFeaturing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#tieneFeaturing">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Cancion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Featuring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#tieneGenero -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#tieneGenero">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Cancion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Genero"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#tieneLyric -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#tieneLyric">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Cancion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Lyric"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#tieneNacionalidad -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#tieneNacionalidad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Artista"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Nacionalidad"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#nombre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Artista"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Cancion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Featuring"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Genero"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Lyric"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Nacionalidad"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#sentimiento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#sentimiento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Cancion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Lyric"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Artista -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Artista"/>
+    
+
+
+    <!-- http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Cancion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Cancion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Featuring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Featuring"/>
+    
+
+
+    <!-- http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Genero -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Genero"/>
+    
+
+
+    <!-- http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Lyric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Lyric"/>
+    
+
+
+    <!-- http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Nacionalidad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Nacionalidad"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
