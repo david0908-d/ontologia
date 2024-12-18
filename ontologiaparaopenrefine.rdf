@@ -77,9 +77,9 @@
 
     <!-- http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#tieneNacionalidad -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#tieneNacionalidad">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Artista"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Nacionalidad"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#tieneIdioma">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Cancion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/davidd/ontologies/2024/10/holaquetal#Idioma"/>
     </owl:ObjectProperty>
     
 
